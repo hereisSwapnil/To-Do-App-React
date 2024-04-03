@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../../app/slices/todoSlice";
 
+// This component will display the input field for adding a new todo item.
 export const TaskInput = () => {
+  // The todoText state will store the text input value.
   const [todoText, setTodoText] = useState("");
   const dispatch = useDispatch();
 
+  // The handleAddTodo function will dispatch the addTodo action with the new todo item's text.
   const handleAddTodo = () => {
     if (todoText.trim() !== "") {
       dispatch(

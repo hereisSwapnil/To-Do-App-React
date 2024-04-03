@@ -7,19 +7,24 @@ import {
 } from "../../app/slices/todoSlice";
 import "./ListItem.css";
 
+// This component will display a single todo item.
 export const ListItem = ({ todo }) => {
+  // The editing state will determine if the todo item is being edited.
   const [editing, setEditing] = useState(false);
   const [editedText, setEditedText] = useState(todo.text);
   const dispatch = useDispatch();
 
+  // The handleDelete function will dispatch the deleteTodo action with the todo item's id.
   const handleDelete = () => {
     dispatch(deleteTodo(todo.id));
   };
 
+  // The handleEdit function will set the editing state to true.
   const handleEdit = () => {
     setEditing(true);
   };
 
+  // The handleSaveEdit function will dispatch the editTodo action with the todo item's id and the edited text.
   const handleSaveEdit = () => {
     if (editedText.trim() !== "") {
       dispatch(
@@ -32,11 +37,13 @@ export const ListItem = ({ todo }) => {
     }
   };
 
+  // The handleCancelEdit function will set the edited text back to the original text and set the editing state to false.
   const handleCancelEdit = () => {
     setEditedText(todo.text);
     setEditing(false);
   };
 
+  // The handleToggleComplete function will dispatch the toggleComplete action with the todo item's id.
   const handleToggleComplete = () => {
     dispatch(toggleComplete(todo.id));
   };
