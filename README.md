@@ -18,9 +18,11 @@ It also uses localStorage for saving tasks locally so that it won't disappear wh
 
 Check out the live demo
 
-## [here]()
+## [here](https://to-do-app-react-five-weld.vercel.app/)
 
 ## Video
+
+[Screencast from 03-04-24 09:00:53 PM IST.webm](https://github.com/hereisSwapnil/To-Do-App-React/assets/85278243/0ffd5049-33e0-424c-92e4-ea83e3b45e86)
 
 ## Screenshots
 
