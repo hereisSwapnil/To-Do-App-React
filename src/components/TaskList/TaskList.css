@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.input input {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.input button {
+  width: 100px;
+  height: 35px;
+  margin-bottom: 10px;
+  margin: auto;
+  font-size: 20px;
+}
+
+.input button:hover {
+  cursor: pointer;
+  background-color: #ccc7b9;
+}

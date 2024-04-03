@@ -1,0 +1,66 @@
+.listItemContainer {
+  background: #ccc7b9;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  color: black;
+  max-width: 900px;
+  margin: auto;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.listItemContainer:hover {
+  background: #8c8c8c;
+}
+
+.listLeft {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.listLeft input {
+  margin-top: 16px;
+  transform: scale(1.2);
+}
+
+.listRight {
+  margin-top: 16px;
+}
+
+.listRight {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}
+
+.underline {
+  text-decoration: line-through;
+}
+
+.editInput {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.editBtn:hover {
+  cursor: pointer;
+  color: #ccc7b9;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+  color: #ccc7b9;
+}
+
+.saveBtn:hover {
+  cursor: pointer;
+  color: #ccc7b9;
+}
+
+.cancelBtn:hover {
+  cursor: pointer;
+  color: #ccc7b9;
+}
